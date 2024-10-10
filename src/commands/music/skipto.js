@@ -3,7 +3,7 @@ module.exports = {
   name: "skipto",
   description: "skip to a specific track in queue.",
   cooldown: 5,
-  isPremium: true,
+  isPremium: false,
   category: "MUSIC",
   SameVoiceChannel: true,
   InVoiceChannel: true,

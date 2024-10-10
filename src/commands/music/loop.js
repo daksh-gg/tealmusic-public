@@ -3,7 +3,7 @@ module.exports = {
   name: "loop",
   description: "loops the queue or current playing song",
   cooldown: 3,
-  isPremium: true,
+  isPremium: false,
   category: "MUSIC",
   SameVoiceChannel: true,
   InVoiceChannel: true,

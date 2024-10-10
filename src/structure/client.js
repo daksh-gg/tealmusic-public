@@ -34,7 +34,7 @@ class DiscordBot extends Client {
       shards: options.shards,
       shardCount: options.shardCount,
       partials: [Partials.User, Partials.Message, Partials.Reaction],
-      intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildVoiceStates],
+      intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.MessageContent],
       presence: {
         activities: [{ name: `Booting up`, type: ActivityType.Playing }],
         status: PresenceUpdateStatus.DoNotDisturb,

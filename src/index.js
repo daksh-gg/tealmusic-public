@@ -17,7 +17,6 @@ module.exports = (client) => {
     autoIndex: false,
     connectTimeoutMS: 3000,
     socketTimeoutMS: 3000,
-    maxTimeMS: 2400,
     family: 4,
     useUnifiedTopology: true,
   };

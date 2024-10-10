@@ -12,7 +12,7 @@ module.exports = {
   InBotVC: true,
   command: {
     enabled: true,
-    aliases: ["aaja", "j", "start"],
+    aliases: ["j", "start", "come"],
     usage: "",
     example: "",
     minArgsCount: 0,

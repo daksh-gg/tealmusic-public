@@ -2,8 +2,8 @@ const { EmbedBuilder } = require("discord.js");
 module.exports = {
   name: "shuffle",
   description: "Shuffle the queue.",
-  cooldown: 30,
-  isPremium: true,
+  cooldown: 3,
+  isPremium: false,
   category: "MUSIC",
   SameVoiceChannel: true,
   InVoiceChannel: true,

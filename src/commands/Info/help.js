@@ -74,7 +74,7 @@ async function HelpPage(client, { member }) {
   const commands = client.commands.filter((cmd) => cmd.category !== "OWNER");
   const appcmds = await client.application.commands.fetch();
 
-  const content = `**👋 There's now a patreon page. [click here to view](https://www.patreon.com/join/lorenzo132)**\nPlease do not pledge to it if u cannot afford it <:_pepe_namaste:850283075353968650> Any support is ofcource appreciated.
+  const content = `Self hosted [Teal Music](https://github.com/teal-discord/tealmusic-public/tree/5ee4d14ac1448aa14061b195e780d59abfa601a4) by @daksh (97268410836062208) if you are a friend let me know to add the bot to your server. Works with YT links, Spotify links, slash command, prefix command etc.
  `;
   helpEmbed.setDescription(content);
 
@@ -145,26 +145,21 @@ async function HelpPage(client, { member }) {
   Fields.forEach((field) => helpEmbed.addFields(field));
   helpEmbed.addFields({
     name: `Links: `,
-    value: `**[Invite Me](${client.botinvite}) • [Premium](${client.config.PATREON}) • [Support Server](${client.config.SUPPORT_SERVER}) • [Vote](${client.config.VOTE})**`,
+    value: `**[Invite Me](${client.botinvite}) • Ask @daksh for whitelist https://discord.gg/h9tepsRGDK **`,
     inline: false,
   });
 
   const row = new ActionRowBuilder().addComponents([
     new ButtonBuilder()
       .setStyle(ButtonStyle.Link)
-      .setLabel("Invite")
+      .setLabel("Invite (if allowed)")
       .setEmoji(client.emoji.invite)
       .setURL(client.botinvite),
     new ButtonBuilder()
       .setStyle(ButtonStyle.Link)
-      .setLabel("Support")
+      .setLabel("Support Server for Teal (not my server)")
       .setEmoji(client.emoji.support)
       .setURL(client.config.SUPPORT_SERVER),
-    new ButtonBuilder()
-      .setLabel("Premium")
-      .setEmoji(client.emoji.premium)
-      .setURL(client.config.PATREON)
-      .setStyle(ButtonStyle.Link),
   ]);
 
   return { embeds: [helpEmbed], components: [row] };

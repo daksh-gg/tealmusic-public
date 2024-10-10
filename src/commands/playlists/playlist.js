@@ -13,7 +13,7 @@ module.exports = {
   name: "playlist",
   description: "custom playlist",
   cooldown: 7,
-  isPremium: true,
+  isPremium: false,
   category: "PLAYLIST",
   SameVoiceChannel: true,
   InVoiceChannel: true,

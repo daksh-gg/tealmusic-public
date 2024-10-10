@@ -5,7 +5,7 @@ module.exports = {
   name: "247",
   description: "never leaves the voice channel.",
   cooldown: 6,
-  isPremium: true,
+  isPremium: false,
   category: "PREMIUM",
   botPermissions: [],
   userPermissions: ["ManageMessages"],

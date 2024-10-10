@@ -6,7 +6,7 @@ module.exports = {
   name: "lyrics",
   description: "Shows lyrics for the currently playing song.",
   cooldown: 30,
-  isPremium: true,
+  isPremium: false,
   category: "MUSIC",
   SameVoiceChannel: true,
   InVoiceChannel: true,

@@ -16,7 +16,7 @@ const TealClient = require("./src/structure/client");
 
 const customClientOptions = {
   partials: [Partials.User, Partials.Message, Partials.Reaction],
-  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildVoiceStates],
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.MessageContent],
   presence: {
     activities: [{ name: `Booting up`, type: ActivityType.Playing }],
     status: PresenceUpdateStatus.DoNotDisturb,
@@ -77,8 +77,8 @@ const sharderOptions = {
   client: TealClient,
   autoRestart: true,
   token: process.env.BOT_TOKEN,
-  clusterCount: 9,
-  shardCount: 144,
+  clusterCount: 1,
+  shardCount: 1,
   clusterSettings: { execArgv: ["--enable-source-maps"] },
   autoRestart: true,
   handleConcurrency: true,

@@ -12,7 +12,7 @@ module.exports = {
   name: "liked",
   description: "Manage your favorite liked songs",
   cooldown: 3,
-  isPremium: true,
+  isPremium: false,
   category: "FAV",
   SameVoiceChannel: false,
   InVoiceChannel: false,
